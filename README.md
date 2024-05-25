@@ -26,3 +26,8 @@ Description about the project and its features.
 
 Challenge yourself against a computer opponent that makes random moves. The game employs JavaScript's Math.random() function to ensure an unpredictable and dynamic gameplay experience.
 Interesting colored logical pictures located in the center of the page. The user can make his choice in one click.
+
+# Refrences 
+
+- https://www.w3schools.com/
+- https://www.youtube.com/watch?v=jaVNP3nIAv0
