@@ -13,3 +13,17 @@ HTML
 CSS
 BOOTSTRAP
 JAVASCRIPT
+
+## How to play 
+
+- Choose between Rock, Paper or Scissors by clicking in the icon.
+- Rock beats Scissors.
+- Scissors beats Paper.
+- Paper beats Rock.
+- First player to win 10 rounds is the winner.
+- Play again!
+
+# Play Against the Computer
+
+Challenge yourself against a computer opponent that makes random moves. The game employs JavaScript's Math.random() function to ensure an unpredictable and dynamic gameplay experience.
+Interesting colored logical pictures located in the center of the page. The user can make his choice in one click.
