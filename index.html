@@ -1,68 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Rock Paper Scissors,Online Rock Paper Scissors,Random Rock Paper Scissors,Random Results,Random Picker,Random,Rock,Paper,Scissors">
-    <meta name="description" content="Rock Paper Scissors Online! Try our random chance game - Rock Paper Scissors, and see if you can beat the computer!">
-    <link rel="stylesheet" href="assests/css/style.css">
-    <title>Project 2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assests/css/style.css">
+  <title>Rock Paper Scissor</title>
 </head>
 <body>
-    <div id="rps-game">  
-        <div class="container">
+  
+  <section class="game">
+    <!--Title -->
+    <div class="title">Rock Paper Scissor</div>
 
-            <div class="image-wrap" id="rock">
-                <img src="assests/images/Rock.png" alt="Rock">
-            </div>
-
-            <div class="image-wrap" id="scissors">
-                <img src="assests/images/scissors.png" alt="Scissors">
-            </div>
-
-            <div class="image-wrap" id="paper">
-                <img src="assests/images/Papper.png" alt="Paper">
-            </div>
+    <!--Display Score of player and computer -->
+    <div class="score">
+        <div class="playerScore">
+            <h2>Player</h2>
+            <p class="p-count count">0</p>
 
         </div>
-        <div id="result">
-            <!-- Result will be displayed here -->
+        <div class="computerScore">
+            <h2>Computer</h2>
+            <p class="c-count count">0</p>
+
         </div>
-    </div>  
+    </div>
 
-    
-      <!--Table score-->
+    <div class="move">Choose your move</div>
 
-      <table>
-          <thead>
-              <tr>
-                  <th>Player</th>
-                  <th>Computer</th>
-                  <th>Draw</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>
-                      <span id="user-score">0</span>
-                  </td>
-                  <td>
-                      <span id="bot-score">0</span>
-                  </td>
-                  <td>
-                      <span id="draw-score">0</span>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
+    <!--Number of moves left before game ends -->
+    <div class="movesleft">Moves Left: 10 </div>
 
-      <div id="game-info">
-        <div id="round">Round: 1 of 5</div>
-        <!-- Existing score display elements -->
-      </div>
+    <!--Options available to player to play game -->
+     
+    <div class="options">
+      <button class="rock">Rock</button>
+      <button class="paper">Paper</button>
+      <button class="scissor">Scissors</button>
+  </div>
 
+    <!--Final result of game -->
+    <div class="result"></div>
 
-      <script src="/script/script.js"></script> 
-      
+    <!--Reload the game -->
+    <button class="reload"></button>
+
+</section>
+
+  <script src="assests/js/script.js" defer></script>
 </body>
 </html>
