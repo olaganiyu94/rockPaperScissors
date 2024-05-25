@@ -9,9 +9,9 @@ Description about the project and its features.
 
 # Built With
 
--HTML
--CSS
--JAVASCRIPT
+- HTML
+- CSS
+- JAVASCRIPT
 
 ## How to play 
 
