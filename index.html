@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/2c6133bcaa.js" crossorigin="anonymous"></script>
+    <meta name="keywords" content="Rock Paper Scissors,Online Rock Paper Scissors,Random Rock Paper Scissors,Random Results,Random Picker,Random,Rock,Paper,Scissors">
+    <meta name="description" content="Rock Paper Scissors Online! Try our random chance game - Rock Paper Scissors, and see if you can beat the computer!">
     <link rel="stylesheet" href="assests/css/style.css">
     <title>Project 2</title>
 </head>
 <body>
     <div id="rps-game">  
-        <div id="select" class="text-center w-50 mx-auto my-3 select">
-            <div class="row">
-              <div id="rock" class="col-4"><i class="fas fa-hand-rock"></i></div>
-              <div id="paper" class="col-4"><i class="fas fa-hand-paper"></i></div>
-              <div id="scissors" class="col-4"><i class="fas fa-hand-scissors"></i></div>
+        <div class="container">
+
+            <div class="image-wrap" id="rock">
+                <img src="assests/images/Rock.png" alt="Rock">
             </div>
-          </div>
+
+            <div class="image-wrap" id="scissors">
+                <img src="assests/images/scissors.png" alt="Scissors">
+            </div>
+
+            <div class="image-wrap" id="paper">
+                <img src="assests/images/Papper.png" alt="Paper">
+            </div>
+
+        </div>
         <div id="result">
             <!-- Result will be displayed here -->
         </div>
@@ -26,7 +34,6 @@
       <!--Table score-->
 
       <table>
-          <caption>Leaderboard</caption>
           <thead>
               <tr>
                   <th>Player</th>

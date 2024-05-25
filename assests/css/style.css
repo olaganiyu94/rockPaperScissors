@@ -23,11 +23,31 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 10px;
-    background-color: #6db8b4;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center; /* Center the game content */
   }
+
+.container .image-wrap,
+.result-container .image-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 190px;
+    background-color: rgba(92, 92, 179, 0.645);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.image-wrap {
+    margin-bottom: 50px
+}
+.container .image-wrap:hover {
+    transform: scale(1.05);
+}
   /*Score board style for table*/
 .score-board {
   display: flex;
@@ -95,97 +115,3 @@ table caption {
 
 
 /*------------------Media ---------------*/
-/*Media*/
-@media only screen and (max-width: 768px) {
-  .title {
-      margin-top: 50px;
-      font-size: 1.8rem;
-  }
-
-  .result {
-      font-size: 1rem;
-  }
-
-  .container .image-wraper,
-  .result-container .image-wraper {
-      height: 140px;
-  }
-
-  .container img,
-  .result-container img {
-      width: 120px;
-      height: 120px;
-      object-fit: contain;
-  }
-
-  table caption {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-  }
-  #present-user-score{
-      font-size: 1rem;
-  }
-  #present-bot-score{
-      font-size: 1rem;
-  }
-  th{
-      font-size: 1rem;
-  }
-
-  #replay {
-      font-size: 0.8rem;
-  }
-
-  .end-text p {
-      font-size: 9px;
-  }
-
-}
-
-
-@media only screen and (max-width: 480px) {
-  .title {
-      margin-top: 50px;
-      font-size: 1.2rem;
-  }
-
-  .result {
-      font-size: 0.6rem;
-  }
-
-  .container .image-wraper,
-  .result-container .image-wraper {
-      height: 90px;
-  }
-
-  .container img,
-  .result-container img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-  }
-
-  table caption {
-      font-size: 0.6rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-  }
-  #present-user-score{
-      font-size: 0.6rem;
-  }
-  #present-bot-score{
-      font-size: 0.6rem;
-  }
-  th{
-      font-size: 0.6rem;
-  }
-
-  #replay {
-      font-size: 0.5rem;
-  }
-
-  .end-text p {
-      font-size: 6px;
-  }
-}
