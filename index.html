@@ -10,8 +10,6 @@
 </head>
 <body>
     <div id="rps-game">  
-        <h1>Rock-Paper-Scissors</h1>
-        
         <div id="select" class="text-center w-50 mx-auto my-3 select">
             <div class="row">
               <div id="rock" class="col-4"><i class="fas fa-hand-rock"></i></div>
@@ -22,12 +20,34 @@
         <div id="result">
             <!-- Result will be displayed here -->
         </div>
-      </div>  
+    </div>  
 
-      <div id="scoreboard">
-        <div id="player-score">Player Score: 0</div>
-        <div id="computer-score">Computer Score: 0</div>
-      </div>
+    
+      <!--Table score-->
+
+      <table>
+          <caption>Leaderboard</caption>
+          <thead>
+              <tr>
+                  <th>Player</th>
+                  <th>Computer</th>
+                  <th>Draw</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                      <span id="user-score">0</span>
+                  </td>
+                  <td>
+                      <span id="bot-score">0</span>
+                  </td>
+                  <td>
+                      <span id="draw-score">0</span>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
 
       <div id="game-info">
         <div id="round">Round: 1 of 5</div>
@@ -36,5 +56,6 @@
 
 
       <script src="/script/script.js"></script> 
+      
 </body>
 </html>

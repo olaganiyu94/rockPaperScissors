@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@97.8,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -6,20 +14,51 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #020463, #020463);
+    background: linear-gradient(to right, #ebdd63, #6d6fe6);
     color: #333;
   }
   
   #rps-game {
-    width: 80%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
+    padding: 10px;
+    background-color: #6db8b4;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center; /* Center the game content */
   }
+  /*Score board style for table*/
+.score-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+table {
+  font-family: "Manrope", sans-serif;
+  margin-top: 10px;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  font-size: 1.3rem;
+}
+
+table tr {
+  text-align: center;
+}
+
+table td {
+  width: 60px;
+}
+
+table caption {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
   
   #result {
     margin-top: 20px;
@@ -52,4 +91,101 @@ body {
   font-size: 4rem;
   font-weight: bolder;
   cursor: pointer;
+}
+
+
+/*------------------Media ---------------*/
+/*Media*/
+@media only screen and (max-width: 768px) {
+  .title {
+      margin-top: 50px;
+      font-size: 1.8rem;
+  }
+
+  .result {
+      font-size: 1rem;
+  }
+
+  .container .image-wraper,
+  .result-container .image-wraper {
+      height: 140px;
+  }
+
+  .container img,
+  .result-container img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+  }
+
+  table caption {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+  }
+  #present-user-score{
+      font-size: 1rem;
+  }
+  #present-bot-score{
+      font-size: 1rem;
+  }
+  th{
+      font-size: 1rem;
+  }
+
+  #replay {
+      font-size: 0.8rem;
+  }
+
+  .end-text p {
+      font-size: 9px;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  .title {
+      margin-top: 50px;
+      font-size: 1.2rem;
+  }
+
+  .result {
+      font-size: 0.6rem;
+  }
+
+  .container .image-wraper,
+  .result-container .image-wraper {
+      height: 90px;
+  }
+
+  .container img,
+  .result-container img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+  }
+
+  table caption {
+      font-size: 0.6rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+  }
+  #present-user-score{
+      font-size: 0.6rem;
+  }
+  #present-bot-score{
+      font-size: 0.6rem;
+  }
+  th{
+      font-size: 0.6rem;
+  }
+
+  #replay {
+      font-size: 0.5rem;
+  }
+
+  .end-text p {
+      font-size: 6px;
+  }
 }
