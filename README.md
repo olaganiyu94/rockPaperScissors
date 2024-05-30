@@ -22,6 +22,8 @@ Description about the project and its features.
 - First player to win 10 rounds is the winner.
 - Play again!
 
+ ![image](https://github.com/olaganiyu94/rockPaperScissors/assets/23237638/60bb65f9-523e-4bab-8d65-1abc2f187ed0)
+
 # Play Against the Computer
 
 Challenge yourself against a computer opponent that makes random moves. The game employs JavaScript's Math.random() function to ensure an unpredictable and dynamic gameplay experience.
