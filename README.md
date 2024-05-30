@@ -22,7 +22,14 @@ Description about the project and its features.
 - First player to win 10 rounds is the winner.
 - Play again!
 
+# If computer win 
+
  ![image](https://github.com/olaganiyu94/rockPaperScissors/assets/23237638/60bb65f9-523e-4bab-8d65-1abc2f187ed0)
+
+ # If Player Win
+
+ ![image](https://github.com/olaganiyu94/rockPaperScissors/assets/23237638/8496996f-11fc-48c8-a258-03d9cf61d970)
+
 
 # Play Against the Computer
 
