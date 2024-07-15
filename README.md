@@ -24,11 +24,13 @@ Description about the project and its features.
 
 # If computer win 
 
- ![image](https://github.com/olaganiyu94/rockPaperScissors/assets/23237638/60bb65f9-523e-4bab-8d65-1abc2f187ed0)
+![image](https://github.com/user-attachments/assets/c9dceef5-aef1-4261-b2fe-65c190046d4d)
+
 
  # If Player Win
 
- ![image](https://github.com/olaganiyu94/rockPaperScissors/assets/23237638/8496996f-11fc-48c8-a258-03d9cf61d970)
+![image](https://github.com/user-attachments/assets/a3500cc3-7167-4fb2-aa2c-d6891dd4a0e3)
+
 
 
 # Play Against the Computer
