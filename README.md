@@ -53,7 +53,7 @@ Interesting colored logical pictures located in the center of the page. The user
 
 # How to play 
 
-- ![image](https://github.com/user-attachments/assets/e8c51b9a-524a-4439-abfd-24190d2b54a3)
+ ![image](https://github.com/user-attachments/assets/e8c51b9a-524a-4439-abfd-24190d2b54a3)
 
 
 # Testing
