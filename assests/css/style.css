@@ -136,6 +136,19 @@ table caption {
 #replay:hover {
   background-color: rgb(73, 157, 179);
 }
+.Rules{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 190px;
+  background-color: rgba(92, 92, 179, 0.645);
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+}
 /*Media*/
 @media only screen and (max-width: 768px) {
   .title {
