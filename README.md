@@ -80,7 +80,7 @@ Interesting colored logical pictures located in the center of the page. The user
 
 - HTML No errors were returned when passing through the official
 
-W3C markup validator • https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Folaganiyu94.github.io%2FAnpost%2Findex.html/#textarea
+- W3C markup validator • https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Folaganiyu94.github.io%2FAnpost%2Findex.html/#textarea
 
 - CSS No errors were found when passing through the official
 
