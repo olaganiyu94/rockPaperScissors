@@ -1,131 +1,143 @@
+//get the elements
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
+const container = document.querySelector(".container");
 
+//Button
+const replay = document.getElementById("replay");
 
-const game = () => {
-    let playerScore = 0;
-    let computerScore = 0
-    let moves = 0;
-    
-    
-    // Function to 
-    const playGame = () => {
-        const rockBtn = document.querySelector('.rock');
-        const paperBtn = document.querySelector('.paper');
-        const scissorBtn = document.querySelector('.scissor');
-        const playerOptions = [rockBtn,paperBtn,scissorBtn];
-        const computerOptions = ['rock','paper','scissors']
-        
-        // Function to start playing game
-        playerOptions.forEach(option => {
-            option.addEventListener('click',function(){
-    
-                const movesLeft = document.querySelector('.movesleft');
-                moves++;
-                movesLeft.innerText = `Moves Left: ${10-moves}`;
-                
-    
-                const choiceNumber = Math.floor(Math.random()*3);
-                const computerChoice = computerOptions[choiceNumber];
-    
-                // Function to check who wins
-                winner(this.innerText,computerChoice)
-                
-                // Calling gameOver function after 10 moves
-                if(moves == 10){
-                    gameOver(playerOptions,movesLeft);
-                }
-            })
-        })
-        
+//Results
+const resultContainer = document.querySelector(".result-container");
+const resultPlace = document.getElementById("result");
+const firstItem = document.getElementById("first-item");
+const secondItem = document.getElementById("second-item");
+const firstItemText= document.getElementById("first-item-text");
+const secondItemText= document.getElementById("second-item-text");
+const presentplayerScore = document.getElementById("current-player-score");
+const presentcomputerScore = document.getElementById("current-computer-score");
+//Leaderboard
+const playerScorePlace = document.getElementById("player-score");
+const computerScorePlace = document.getElementById("computer-score");
+const drawScorePlace = document.getElementById("draw-score");
+
+//Scores
+let playerScore = 0;
+let computerScore = 0;
+let drawScore = 0;
+
+//function
+const play = (element) => {
+    const playerChoice = element;
+    const computerChoice = selectRandom();
+
+    // Hide the element not selected by both
+    changeTheLayout(playerChoice, computerChoice);
+
+    const result = compere(playerChoice, computerChoice); 
+    const [playerPoints, computerPoints] = result;
+
+    //Who winner text
+    let resultText = "";
+
+    if(playerPoints > computerPoints){
+
+        resultText = "You won!Сongrats🎉";
+        resultPlace.style.color = "green";
+        playerScore += 1;
+
+    } else if (playerPoints < computerPoints) {
+
+        resultText = "You lost!😥 Unlucky";
+        resultPlace.style.color = "red";
+        computerScore += 1;
+
+    } else {
+        resultText = "It's a draw!😒";
+        resultPlace.style.color = "black";
+        drawScore += 1;
     }
-    
-    // Function to decide winner
-    const winner = (player,computer) => {
-        const result = document.querySelector('.result');
-        const playerScoreBoard = document.querySelector('.p-count');
-        const computerScoreBoard = document.querySelector('.c-count');
-        player = player.toLowerCase();
-        computer = computer.toLowerCase();
-        if(player === computer){
-            result.textContent = 'Tie'
-        }
-        else if(player == 'rock'){
-            if(computer == 'paper'){
-                result.textContent = 'Computer Won';
-                computerScore++;
-                computerScoreBoard.textContent = computerScore;
-    
-            }else{
-                result.textContent = 'Player Won'
-                playerScore++;
-                playerScoreBoard.textContent = playerScore;
-            }
-        }
-        else if(player == 'scissors'){
-            if(computer == 'rock'){
-                result.textContent = 'Computer Won';
-                computerScore++;
-                computerScoreBoard.textContent = computerScore;
-            }else{
-                result.textContent = 'Player Won';
-                playerScore++;
-                playerScoreBoard.textContent = playerScore;
-            }
-        }
-        else if(player == 'paper'){
-            if(computer == 'scissors'){
-                result.textContent = 'Computer Won';
-                computerScore++;
-                computerScoreBoard.textContent = computerScore;
-            }else{
-                result.textContent = 'Player Won';
-                playerScore++;
-                playerScoreBoard.textContent = playerScore;
-            }
-        }
+    // update the result text
+    resultPlace.innerText = resultText;
+    firstItemText.innerText = `You picked ${playerChoice}`;
+    secondItemText.innerText = `Computer picked ${computerChoice}`;
+    presentplayerScore.innerText = playerPoints;
+    presentcomputerScore.innerText = computerPoints;
+
+     // update the leaderboard
+     playerScorePlace.innerText = playerScore; 
+     computerScorePlace.innerText = computerScore; 
+     drawScorePlace.innerText = drawScore; 
+};
+
+//computer selects a random element
+
+const selectRandom = () => {
+    const elements = ["rock", "paper", "scissors"]; 
+    const randomNumber = Math.floor(Math.random() * 3); 
+    const randomElement = elements[randomNumber]; 
+    return randomElement; 
+};
+
+//Compere the choices
+const compere = (playerChoice, computerChoice) =>{
+    let computerPoints = 0;
+    let playerPoints = 0;
+
+//Draw
+    if(playerChoice === computerChoice){
+        return [playerPoints, computerPoints];
     }
-    
-    // Function to run when game is over
-    const gameOver = (playerOptions,movesLeft) => {
-    
-        const chooseMove = document.querySelector('.move');
-        const result = document.querySelector('.result');
-        const reloadBtn = document.querySelector('.reload');
-    
-        playerOptions.forEach(option => {
-            option.style.display = 'none';
-        })
-    
-     
-        chooseMove.innerText = 'Game Over!!'
-        movesLeft.style.display = 'none';
-    
-        if(playerScore > computerScore){
-            result.style.fontSize = '2rem';
-            result.innerText = 'You Won The Game'
-            result.style.color = '#308D46';
-        }
-        else if(playerScore < computerScore){
-            result.style.fontSize = '2rem';
-            result.innerText = 'You Lost The Game';
-            result.style.color = 'red';
-        }
-        else{
-            result.style.fontSize = '2rem';
-            result.innerText = 'Tie';
-            result.style.color = 'grey'
-        }
-        reloadBtn.innerText = 'Restart';
-        reloadBtn.style.display = 'flex'
-        reloadBtn.addEventListener('click',() => {
-            window.location.reload();
-        })
+
+    switch(playerChoice) {
+        case "rock":
+            computerChoice === "scissors" ? (playerPoints += 1) : (computerPoints += 1);
+            break;
+        case "paper":
+            computerChoice === "rock" ? (playerPoints += 1) : (computerPoints += 1);
+            break;
+        case "scissors":
+            computerChoice === "paper" ? (playerPoints += 1) : (computerPoints +=1 );
+            break;
+        default:
+            console.log("Error");
     }
-    
-    
-    // Calling playGame function inside game
-    playGame();
-    
-    }
-    
-    // Calling the game function
-    game();
+
+    return [playerPoints, computerPoints]; 
+
+};
+
+//add event listeners
+rock.addEventListener("click", () => play("rock"));
+paper.addEventListener("click", () => play("paper"));
+scissors.addEventListener("click", () => play("scissors"));
+replay.addEventListener("click", () => replayGame());
+
+// Hide the element not selected by both
+let changeTheLayout = (playerChoice, computerChoice) => {
+
+    // show the result container
+  resultContainer.style.display = "flex";
+
+   // change the images
+   firstItem.src = `./assests/images/${playerChoice}.png`;
+   secondItem.src = `./assests/images/${computerChoice}.png`;
+
+  // Scale down the container
+  container.style.transform = "scale(0.5)";
+  container.style.transition = "all 0.5 ease";
+  container.style.pointerEvents = "none";
+};
+
+const replayGame = () => {
+
+   // hide the result container 
+
+   resultContainer.style.display = "none";
+
+   //scale up the container 
+
+   container.style.transform = "scale(1)";
+   container.style.pointerEvents = "auto";
+   container.style.marginTop = "0px";
+};

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,46 +8,113 @@
   <title>Rock Paper Scissor</title>
 </head>
 <body>
-  
-  <section class="game">
-    <!--Title -->
-    <div class="title">Rock Paper Scissor</div>
+    <!--Header-->
+    <header>
+        <h1 class="title">Rock - Paper - Scissors</h1>
+        <!-- Button to trigger the modal -->
+    </header>
+    <!--Main-->
+    <main>
+        <!--Section-->
+        <section>
+            <div class="score-board">
 
-    <!--Display Score of player and computer -->
-    <div class="score">
-        <div class="playerScore">
-            <h2>Player</h2>
-            <p class="p-count count">0</p>
+                <!--Table score-->
 
-        </div>
-        <div class="computerScore">
-            <h2>Computer</h2>
-            <p class="c-count count">0</p>
+                <table>
+                    <caption>Score Board</caption>
 
-        </div>
-    </div>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Draw</th>
+                            <th>Computer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span id="player-score">0</span>
+                            </td>
+                            <td>
+                                <span id="draw-score">0</span>
+                            </td>
+                            <td>
+                                <span id="computer-score">0</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--Div with result-container after choice-->
 
-    <div class="move">Choose your move</div>
+            <div class="result-container">
 
-    <!--Number of moves left before game ends -->
-    <div class="movesleft">Moves Left: 10 </div>
+                <div class="image-wraper">
+                    <img src="assests/images/paper.jpg" id="first-item" alt="Paper">
+                    <h2 class="result" id="first-item-text"></h2>
+                </div>
 
-    <!--Options available to player to play game -->
-     
-    <div class="options">
-      <button class="rock">Rock</button>
-      <button class="paper">Paper</button>
-      <button class="scissor">Scissors</button>
-  </div>
+                <div class="result-wraper" id="result-box">
+                    <h2 class="result" id="result"></h2>
+                    
+                    <table>
+                        <caption>Scores</caption>
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th>Computer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span id="current-player-score">0</span>
+                                </td>
+                                <td>
+                                    <span id="current-computer-score">0</span>
+                                </td>
 
-    <!--Final result of game -->
-    <div class="result"></div>
+                            </tr>
+                        </tbody>
+                    </table>
 
-    <!--Reload the game -->
-    <button class="reload"></button>
+                    <button id="replay">Replay</button>
 
-</section>
+                </div>
 
-  <script src="assests/js/script.js" defer></script>
+                <div class="image-wraper">
+                    <img src="assests/images/paper.jpg" id="second-item" alt="Paper">
+                    <h2 class="result" id="second-item-text"></h2>
+                </div>
+                
+            </div>
+
+
+
+            <!--Images main div-->
+
+            <div class="container">
+
+                
+                <div class="image-wraper" id="rock">
+                    <img src="assests/images/rock.png" alt="Rock">
+                </div>
+
+                <div class="image-wraper" id="scissors">
+                    <img src="assests/images/scissors.png" alt="Scissors">
+                </div>
+
+                <div class="image-wraper" id="paper">
+                    <img src="assests/images/paper.png" alt="Paper">
+                </div>
+
+            </div>   
+            
+             
+        </section>
+    </main>
+ 
+    <script src="assests/js/script.js" defer></script>
 </body>
 </html>
