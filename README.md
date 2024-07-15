@@ -58,7 +58,18 @@ Interesting colored logical pictures located in the center of the page. The user
 
 # Testing
 
-Validator testing
+# Functional Testing
+- Choice Selection: Users can select one of the choices (Rock, Paper, or Scissors) by clicking on the respective buttons.
+- Computer's Choice: The computer makes a random and fair selection in response to the user's choice.
+- Game Outcome: The game accurately determines the winner, loser, or a draw based on the selected choices.
+- Score Tracking: The user's score is correctly updated after each round, reflecting wins, losses, and draws.
+
+# Technologies 
+- HTML - To create a basic site.
+- CSS - To create a nice, standout front-end and to give a great user experience.
+- JavaScript - To enhance web development and create dynamic and interactive user interfaces.
+
+# Validator testing
 
 - HTML No errors were returned when passing through the official
 
@@ -69,6 +80,6 @@ W3C markup validator • https://validator.w3.org/nu/?showsource=yes&doc=https%3
 w3c CSS validator [W3C CSS Validator Results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Folaganiyu94.github.io%2FAnpost%2Findex.html/#textarea)
 
 # Refrences 
-
+- Slack group messages and past github 
 - https://www.w3schools.com/
 - https://www.youtube.com/watch?v=jaVNP3nIAv0
