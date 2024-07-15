@@ -53,8 +53,9 @@ Interesting colored logical pictures located in the center of the page. The user
 
 # How to play 
 
--- Rules of the game
-- The rules are straightforward: Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock. The game's simplicity and universal appeal make it an excellent choice for social interactions, icebreakers, or just a friendly competition.
+## Rules of the game
+- The rules are straightforward: Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock. The game's simplicity and universal appeal make it an excellent choice for social interactions, icebreakers, or just a friendly 
+   competition.
  ![image](https://github.com/user-attachments/assets/e8c51b9a-524a-4439-abfd-24190d2b54a3)
 
 
