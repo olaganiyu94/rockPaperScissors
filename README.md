@@ -72,6 +72,10 @@ Interesting colored logical pictures located in the center of the page. The user
 - CSS - To create a nice, standout front-end and to give a great user experience.
 - JavaScript - To enhance web development and create dynamic and interactive user interfaces.
 
+# User Interaction
+- Responsive Design: Test the game's responsiveness on various devices and screen sizes to ensure a consistent and visually appealing layout.
+- Game Replay: Users can restart the game by clicking on the "Replay" button, resetting the score and allowing them to play again.
+
 # Validator testing
 
 - HTML No errors were returned when passing through the official
@@ -80,7 +84,7 @@ W3C markup validator • https://validator.w3.org/nu/?showsource=yes&doc=https%3
 
 - CSS No errors were found when passing through the official
 
-w3c CSS validator [W3C CSS Validator Results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Folaganiyu94.github.io%2FAnpost%2Findex.html/#textarea)
+- w3c CSS validator [W3C CSS Validator Results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Folaganiyu94.github.io%2FAnpost%2Findex.html/#textarea)
 
 # Refrences 
 - Slack group messages and past github 
