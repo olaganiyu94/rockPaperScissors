@@ -37,6 +37,24 @@ Description about the project and its features.
 
 Challenge yourself against a computer opponent that makes random moves. The game employs JavaScript's Math.random() function to ensure an unpredictable and dynamic gameplay experience.
 Interesting colored logical pictures located in the center of the page. The user can make his choice in one click.
+![image](https://github.com/user-attachments/assets/4668bd2e-b171-44bc-9170-a2d3e0ef2bfe)
+
+
+![image](https://github.com/user-attachments/assets/88e14cf9-51d4-4a9f-8c53-bbf94bfa9b9c)
+
+
+# Replay Option 
+- The fun doesn't have to stop after a single round. Use the "Replay" button to start a new game immediately after the current round concludes. Enjoy endless rounds of Rock, Paper, Scissors fun!
+
+
+# Design
+
+- Enjoy the game on various devices, including desktops, tablets, and smartphones.
+
+# How to play 
+
+- ![image](https://github.com/user-attachments/assets/e8c51b9a-524a-4439-abfd-24190d2b54a3)
+
 
 # Testing
 
